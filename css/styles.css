@@ -16,9 +16,7 @@ html {
 ::after {
   box-sizing: inherit;
 }
-img {
-  display: block;
-}
+
 h1,
 h2,
 h3,
@@ -55,15 +53,16 @@ body {
   padding-left: 15px;
 }
 
-header .container {
-  display: flex;
-}
 header .container,
 footer .container {
   padding-top: 0px;
   padding-bottom: 0px;
 }
 /* Header */
+header .container {
+  display: flex;
+  align-items: center;
+}
 header {
   font-size: 14px;
   line-height: 1.14;
@@ -85,26 +84,22 @@ header a {
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  margin-top: 0px;
   margin-right: 85px;
-  margin-bottom: 25px;
-  margin-left: 0px;
 }
 .active {
   color: var(--active-color);
 }
 .nav-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: 305px;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 .nav-item a {
+  display: block;
   color: var(--additional-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .active a {
   color: var(--active-color);
@@ -115,14 +110,13 @@ header a {
 }
 .contacts-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-left: auto;
 }
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-item a {
-  display: inline-block;
+  display: block;
   color: var(--main-text-color);
 }
 .contacts-item a:hover,
@@ -130,6 +124,10 @@ header a {
   color: var(--active-color);
 }
 /* Footer */
+footer .container {
+  display: flex;
+  align-items: center;
+}
 footer {
   color: #ffffff;
   background-color: #2f303a;
@@ -154,28 +152,44 @@ footer .logo {
 footer .contacts-item a {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+}
+.address-list li {
+  display: block;
+}
+.address-list li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address {
+  margin-right: 70px;
+  margin-bottom: 46px;
 }
 .address-item {
   font-size: 14px;
   font-style: normal;
   margin-bottom: 9px;
 }
-.join {
+footer .join {
   font-size: 14px;
   font-weight: 700;
   line-height: 0.87;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.join-social {
+  margin-right: 94px;
+}
 .copy {
-  display: inline-block;
+  display: block;
   font-size: 12px;
   line-height: 2;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
   padding-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /* Button */
 .button {
   color: var(--additional-text-color);
@@ -281,14 +295,15 @@ footer .contacts-item a {
 }
 
 /* We do */
-.we-do {
-}
 
 .we-do ul {
   list-style-type: none;
 }
 .we-do a {
   text-decoration: none;
+}
+.we-do img {
+  display: block;
 }
 .we-do-list {
   display: flex;
@@ -309,11 +324,12 @@ footer .contacts-item a {
 
 /* Team */
 .team ul {
-  list-style-type: none;
+  list-style: none;
 }
 .team {
   font-size: 16px;
   text-align: center;
+  line-height: 1.19;
   background: #f5f4fa;
 }
 
@@ -329,7 +345,6 @@ footer .contacts-item a {
 }
 .team .item-title {
   font-size: 16px;
-  line-height: 1.19;
   font-weight: 500;
   text-transform: none;
   margin-bottom: 10px;
@@ -339,7 +354,7 @@ footer .contacts-item a {
   line-height: 1.19;
   margin-bottom: 16px;
 }
-.team .social {
+.social {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
@@ -359,6 +374,21 @@ footer .contacts-item a {
 .clients-list {
   display: flex;
   justify-content: space-between;
+}
+.clients-item {
+  display: block;
+}
+.clients-item a {
+  display: block;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+  text-align: center;
+}
+.clients-item img {
+  display: inline-block;
+  margin: 0 auto;
 }
 .clients-item a:hover,
 .clients-item a:focus {
