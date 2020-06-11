@@ -283,7 +283,7 @@ footer .contacts-item a {
   text-decoration: none;
 }
 .item-image {
-  background-color: var(--active-color);
+  background: rgba(33, 150, 243, 0.9);
 }
 .item-title {
   color: var(--additional-text-color);
