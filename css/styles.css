@@ -465,22 +465,24 @@ footer .join {
   width: 370px;
   margin-bottom: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 5px 5px 0px 0px;
 
   position: relative;
 }
-
+.works-item .item-title {
+  text-transform: none;
+}
 .item-image {
   background-color: rgba(33, 150, 243, 0.9);
+  border-radius: 5px 5px 0px 0px;
 }
 .item-link {
   text-decoration: none;
 }
-/* .works-item .item-image {
-  margin-bottom: 20px;
-} */
+
 .item-info {
+  border: 1px solid #eeeeee;
   text-align: left;
   padding: 20px 24px;
 }
