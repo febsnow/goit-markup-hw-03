@@ -28,7 +28,6 @@ p {
   margin-bottom: 0px;
 }
 ul {
-  text-decoration: none;
   list-style: none;
   padding-left: 0px;
   margin: 0px;
@@ -58,25 +57,49 @@ footer .container {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-/* Header */
-header .container {
-  display: flex;
-  align-items: center;
+
+/* Button */
+.button {
+  color: var(--additional-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: #f5f4fa;
+  cursor: pointer;
+
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.button.main {
+  color: #ffffff;
+  background-color: var(--active-color);
+}
+
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background-color: var(--active-color);
+}
+
+/* Header */
 header {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-header ul {
-  list-style: none;
-  padding-left: 0px;
+header .container {
+  display: flex;
+  align-items: center;
 }
 header a {
   text-decoration: none;
 }
-
 .logo {
   font-family: 'Raleway', sans-serif;
   color: var(--additional-text-color);
@@ -116,7 +139,6 @@ header a {
   margin-right: 50px;
 }
 .contacts-item a {
-  display: block;
   color: var(--main-text-color);
 }
 .contacts-item a:hover,
@@ -124,51 +146,40 @@ header a {
   color: var(--active-color);
 }
 /* Footer */
-footer .container {
-  display: flex;
-  align-items: center;
-}
 footer {
   color: #ffffff;
   background-color: #2f303a;
 }
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+footer .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 45px;
+  padding-bottom: 28px;
 }
+
 footer a {
   text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 footer .logo {
-  display: inline-block;
   color: #ffffff;
   font-size: 22px;
-  margin-top: 45px;
-  padding-bottom: 0px;
+  margin-right: 0px;
   margin-bottom: 8px;
-}
-footer .contacts-item a {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-}
-.address-list li {
-  display: block;
 }
 .address-list li:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.address {
-  margin-right: 70px;
-  margin-bottom: 46px;
-}
 .address-item {
   font-size: 14px;
   font-style: normal;
-  margin-bottom: 9px;
 }
+footer .address-item a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 footer .join {
   font-size: 14px;
   font-weight: 700;
@@ -176,49 +187,18 @@ footer .join {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.join-social {
-  margin-right: 94px;
+footer .social {
+  padding: 0;
 }
+
 .copy {
   display: block;
   font-size: 12px;
   line-height: 2;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
+  padding-top: 18px;
   padding-bottom: 21px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Button */
-.button {
-  color: var(--additional-text-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  text-align: center;
-  background-color: #f5f4fa;
-  cursor: pointer;
-  border: 1px transparent;
-  min-width: 200px;
-  min-height: 50px;
-}
-.button.main {
-  color: #ffffff;
-  background-color: var(--active-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-/*А нужна ли эта кнопка, если есть "просто кнопка" и "нажатая кнопка"? 
-.button.secondary {
-  color: var(--additional-text-color);
-  background-color: #f5f4fa;
-} */
-.button:hover,
-.button:focus {
-  color: #ffffff;
-  background-color: var(--active-color);
 }
 
 /* HOME PAGE */
@@ -227,6 +207,7 @@ footer .join {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: slategray;
 }
 .hero-title {
   color: lime;
