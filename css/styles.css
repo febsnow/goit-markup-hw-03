@@ -66,12 +66,15 @@ footer .container {
   display: flex;
   justify-content: space-between;
 }
-
 .social-item a {
   display: block;
   padding: 12px;
   border-radius: 50%;
 }
+footer .social-item a {
+  background-color: var(--main-text-color);
+}
+
 .social-item a:hover,
 .social-item a:focus {
   background-color: var(--active-color);
