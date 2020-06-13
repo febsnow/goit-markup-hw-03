@@ -159,11 +159,12 @@ header a {
 }
 
 .contacts-item img {
-  display: inline;
+  margin-right: 10px;
 }
 
 .contacts-item a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
 }
 .contacts-item a:hover,
