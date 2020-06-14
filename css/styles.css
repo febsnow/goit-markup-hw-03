@@ -7,6 +7,7 @@
   --main-text-color: #757575;
   --additional-text-color: #212121;
   --active-color: #2196f3;
+  --footer-background-color: #2f303a;
 }
 html {
   box-sizing: border-box;
@@ -86,7 +87,6 @@ footer .social-item a {
   font-weight: 500;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
   background-color: #f5f4fa;
   cursor: pointer;
 
@@ -177,7 +177,7 @@ header a {
 /* Footer */
 footer {
   color: #ffffff;
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 footer .container {
   display: flex;
@@ -517,7 +517,6 @@ footer .social-item:not(:last-child) {
 
 .our-works .item-description {
   display: none;
-
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
